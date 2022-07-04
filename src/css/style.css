@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+
+:root {
+	--color-green-light: #04c35c;
+	--color-purple-light: #2b6cb0;
+	--color-gray: #1a202c;
+	--color-white200: #f7fafc;
+	--color-white: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Merriweather", serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+button,
+input {
+	border: 0;
+}
+
+button:focus,
+input:focus {
+	border: 0;
+	outline: none;
+}
+
+main {
+	width: 100%;
+	height: 900px;
+	display: flex;
+	margin: 0 auto;
+}
+
+main .img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--color-white200);
+	width: 50%;
+}
+
+main .img img {
+	width: 720px;
+}
+
+main .container {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	background: var(--color--white);
+	width: 50%;
+	height: auto;
+	margin-top: 200px;
+}
+
+.form p {
+	font-family: "Merriweather", serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: left;
+	color: var(--color-gray);
+	margin-bottom: 5px;
+}
+
+.form h1 {
+	font-family: "Merriweather", serif;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 40px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.form-login {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+input[type="email"] {
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	padding: 17px;
+	margin-bottom: 15px;
+}
+
+input#email::placeholder {
+	font-size: 1.1rem;
+}
+
+input[type="password"] {
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	padding: 17px;
+	margin-bottom: 20px;
+}
+
+input#password::placeholder {
+	font-size: 1.1rem;
+}
+
+.form-footer .lembrarme {
+	display: inline;
+}
+
+#lembrar-me {
+	margin-right: 3px;
+}
+
+.form-login a {
+	margin-left: 40px;
+}
+
+.form-login .enviar {
+	background: var(--color-green-light);
+	border: 0;
+	border-radius: 5px;
+	padding: 15px;
+	color: var(--color-white);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 19px;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.form .link-google {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	background: var(--color-gray);
+	border: 0;
+	border-radius: 5px;
+	padding: 15px;
+	color: var(--color-white);
+	font-family: "Merriweather", serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 19px;
+	letter-spacing: 0;
+	text-align: left;
+	width: 100%;
+	cursor: pointer;
+}
+
+.container .form img {
+	margin-right: 10px;
+}
+
+footer {
+	margin-top: 4rem;
+}
+
+@media (max-width: 1440px) {
+	main {
+		width: 100%;
+		height: auto;
+	}
+
+	main .img {
+		width: 100%;
+	}
+
+	main .container {
+		width: 100%;
+		height: auto;
+		margin-top: 60px;
+	}
+
+	.form-login {
+		width: 100%;
+	}
+
+	.form-login a {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1000px) {
+	main .img {
+		display: none;
+	}
+}
